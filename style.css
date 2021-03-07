@@ -4,62 +4,78 @@
     justify-content: space-around;
     height: 70px;
 }
+.livescores1 {
+    font-size: 13px;
+    width: 50%;
+    height: 100%;
+}
+.livescores2 {
+    font-size: 13px;
+    width: 50%;
+    height: 100%;
+}
 @media screen and (max-width:767px) {
     .scores li {
-        font-size: 14px;
+        font-size: 12px;
     }
     .scores {
         height: 269px;
         flex-direction: column;
     }
-    .iconbox {
+    .newsfeed {
         display: none;
     }
     .col-md-4 {
         display: flex;
     }
-    .newsfeed {
-        display:none;
-    }
 }
 @media screen and (max-width:991px) and (min-width:768px) {
-    .iconbox {
-        display: none;
-    }
+    .col-md-4 {
+    display: flex;
+    margin: auto;
+    max-width: 540px;
+    max-height: 136px;
+    } 
     .scores li {
-        font-size: 13px;
+        font-size: 12px;
     }
-}
-ul {
-    display: inline-block;
-    margin-bottom: 0;
-}
 h4 {
     display: inline-block;
+    }
 }
 .navbar-brand {
     font-family: 'Faster One', cursive;
     font-size:xx-large;
 }
-.navbar-expand-lg .navbar-collapse {
-    display: flex;
-    justify-content: space-between;
-}
 .newsfeed {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items:center;
-    width: 183px;
-    height: 267px;
+    width: 195px;
+    height: 207px;
     border-radius: 19px;
     background-color: white;
     padding: 5px;
     margin: 20px;
 }
-/* .newsfeed > h4 {
+@media screen and (max-width:991px) and (min-width:768px) {
+.newsfeed {
+    display: none;
+}
+}
+@media screen and (max-width:767px) {
+    .newsfeed {
+        display: none;
+    }
+}
+.newsfeed > h4 {
     text-decoration: underline;
-} */
+    padding-bottom: 7px;
+}
+.newsfeed > a {
+    margin-bottom: 7px;
+}
 .signup {
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +110,7 @@ h4 {
     background-color: white;
     padding: 16px;
     margin: 20px;
+    font-family: 'Strait', sans-serif;
 }
 .main-content>h2 {
     display: inline;
@@ -123,7 +140,7 @@ hr {
     flex-wrap: wrap;
     padding-top: 113px;
     flex-direction: column;
-    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Strait', sans-serif;
 }
 .time-remaining>h2 {
 
